@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Admin</title>
+    <link rel="stylesheet" href=
+            "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="user-admin.style.client.css"/>
+    <script src="../services/user.service.client.js"></script>
+    <script src="user-admin.component.client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+<h2>User Admin</h2>
+
+    <table class="table" id="#table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Role</th>
+            <th>&nbsp;</th>
+        </tr>
+
+        <tr class="wbdv-form">
+            <td> <input class="wbdv-username-input form-control" id="usernameFld" placeholder="Username"/></td>
+            <td> <input class="wddv-password-input form-control" id="passwordFld" type="password" placeholder="Password"/></td>
+            <td> <input class="wbdv-firstname-input form-control" id="firstNameFld" placeholder="First Name"/></td>
+            <td> <input class="wbdv-lastname-input form-control" id="lastNameFld" placeholder="Last Name"/></td>
+            <td>
+                <select class="wbdv-role-input form-control" id="roleFld">
+                    <option>Student</option>
+                    <option>Faculty</option>
+                    <option>Admin</option>
+                </select>
+            </td>
+
+            <td>
+            <span class="float-center" style="white-space: nowrap">
+            <i class="fas fa-search fa-2x wbdv-search"></i>
+                <button id="createUser" class="wbdv-create wbdv-create-btn">
+                    <i class="fas fa-user-plus fa-2x wbdv-create"></i>
+                </button>
+                <button id="updateUser" class="wbdv-update wbdv-update-btn">
+                    <i class="far fa-check-circle fa-2x wbdv-update"></i>
+                </button>
+            </span>
+            </td>
+        </tr>
+
+        </thead>
+
+        <tbody class="wbdv-tbody" id="userList">
+      <!--  <tr class="wbdv-template wbdv-user wbdv-hidden">
+                <td class="wbdv-username">
+                    <h6 class="wbdv-username d-none d-md-block">Maggie</h6>
+                </td>
+                <td></td>
+                <td class="wbdv-first-name">maggie</td>
+                <td class="wbdv-last-name">q</td>
+                <td class="wbdv-role">FACULTY</td>
+                <td class="wbdv-actions">
+                    <span class="float-center">
+          <i id="wbdv-remove" class="fa-2x fa fa-times wbdv-remove"></i>
+          <i id="wbdv-edit" class="fa-2x fa fa-pencil wbdv-edit"></i>
+        </span>
+                </td>
+            </tr> -->
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+</html>
